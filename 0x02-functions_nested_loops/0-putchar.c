@@ -1,9 +1,9 @@
-# include "0-putchar.h"
+# include "main.h"
 /**
-*ejercicio 0
-*funcion putchar
+*main - ejercicio 0
+*Return: 0
 */
-int main (void)
+int main(void)
 {
 	char *put = "_putchar";
 
@@ -12,7 +12,7 @@ int main (void)
 		_putchar(*put);
 		put++;
 	}
-	_putchar('\n');
+	_putchar ('\n');
 
 	return (0);
 }
