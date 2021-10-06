@@ -21,9 +21,8 @@ for (a = 0; a <= 9; a++)
 	{
 		_putchar(' ');
 	}
-	else{
+	else
 		_putchar((c / 10) + '0');
-	}
 		_putchar((c % 10) + '0');
 	}
 	_putchar('\n');
