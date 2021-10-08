@@ -3,6 +3,7 @@
 *_isupper - is function of return uppercase or not.
 *
 * @c: is variable.
+*Return: 1 of uppercase and 0 or not uppercase.
 */
 
 int _isupper(int c)
