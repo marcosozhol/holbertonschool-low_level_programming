@@ -1,6 +1,6 @@
-#In this repository we carry out the 0x08 C recursion exercises.
+# In this repository we carry out the 0x08 C recursion exercises.
 
-##It has the following tasks
+## It has the following tasks
 
 - Write a function that prints a string, followed by a new line.
 - Write a function that prints a string in reverse.
