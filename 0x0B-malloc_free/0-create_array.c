@@ -17,7 +17,7 @@ char *create_array(unsigned int size, char c)
 	char *cadena;
 	unsigned int i;
 
-	cadena = malloc(sizeof(char) * size);
+	cadena = malloc(sizeof(c) * size);
 
 	if (size == 0)
 		return (NULL);
