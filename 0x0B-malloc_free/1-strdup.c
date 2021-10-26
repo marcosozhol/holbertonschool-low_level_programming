@@ -26,7 +26,7 @@ char *_strdup(char *str)
 	z = malloc(sizeof(char) * a);
 	if (z == 0)
 	return (NULL);
-	for (i = 0; i < a; i++)
+	for (i = 0; i <= a; i++)
 	{
 	z[i] = str[i];
 /*	free(str);*/
