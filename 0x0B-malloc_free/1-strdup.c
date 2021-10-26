@@ -7,8 +7,6 @@
  *
  */
 
-void free(void *str);
-
 char *_strdup(char *str)
 {
 /*retorna NULL si str = null*/
@@ -20,12 +18,14 @@ char *_strdup(char *str)
 		return (NULL);
 
 	for (a = 0; str[a] != '\0'; a++)
+	{
+	}
+	if (a == 0) /*condicion null de memoria*/
+	return (NULL);
 
 	z = malloc(sizeof(char) * a);
-
-	if (z == NULL)	/*condicion nullo de memoria*/
-		return (NULL);
-
+	if (z == 0)
+	return (NULL);
 	for (i = 0; i < a; i++)
 	{
 	z[i] = str[i];
