@@ -20,6 +20,7 @@ char *_strdup(char *str)
 	for (a = 0; str[a] != '\0'; a++)
 	{
 	}
+	a += 1;
 	if (a == 0) /*condicion null de memoria*/
 	return (NULL);
 
