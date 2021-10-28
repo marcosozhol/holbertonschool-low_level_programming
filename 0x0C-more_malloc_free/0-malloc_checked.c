@@ -11,12 +11,12 @@ void *malloc_checked(unsigned int b)
 {
 	void *ptr;
 
-	ptr = malloc(sizeof(unsigned int) * b + 1);
-		return (ptr);
+	ptr = malloc(b);
 
 	if (ptr == NULL)
 	{
 		exit(98); /*sale de programa con 98*/
 	}		/*si ponemos return, saca con 98 lo anterior*/
 
+return (ptr);
 }
