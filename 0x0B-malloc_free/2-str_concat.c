@@ -24,7 +24,7 @@ char *str_concat(char *s1, char *s2)
 	while (s2[j]) /*recorremos la cadena s2*/
 		j++;
 
-	z = malloc(sizeof(char) * (i + j));
+	z = malloc(sizeof(char) * (i + j + 1));
 
 	if (z == NULL)
 		return (NULL);
