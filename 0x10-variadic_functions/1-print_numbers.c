@@ -1,5 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
+#include "variadic_functions.h"
 /**
  *print_numbers - imprime los datos de una cadena
  *@separator: cadena separadora para cada elemento impreso
