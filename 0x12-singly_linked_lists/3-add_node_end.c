@@ -38,13 +38,8 @@ list_t *add_node_end(list_t **head, const char *str)
 	else
 		*head = n;
 	}
-
 return (NULL);
 }
-
-
-
-
 /**
 *_strlen - Funcion para mostrar el largo de una cadena
 *@s: variable con cadena
