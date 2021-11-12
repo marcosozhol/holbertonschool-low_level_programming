@@ -10,5 +10,12 @@
  */
 void free_list(list_t *head)
 {
-	free(head);
+	if (head == NULL)
+		return;
+
+	if (head->str != NULL)
+	{
+		free(head->str);
+		free(head);
+	}
 }
