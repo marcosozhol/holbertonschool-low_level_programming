@@ -33,7 +33,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		g = g->next;
 
 	g->next = n;
-	return (n);
+	/*return (n);*/
 	}
 	else
 		*head = n;
