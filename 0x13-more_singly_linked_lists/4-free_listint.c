@@ -9,6 +9,15 @@
  */
 void free_listint(listint_t *head)
 {
-	if (head != NULL)
-		free(head);
+	listint_t *i; /*puntero para nuevo nodo que vamos a ir liberando*/
+
+	if (head == NULL)
+		return;
+
+	while (head)
+	{
+		i = head;
+		head = head->next;
+		free(i);/*liberamos este nodo a medida que va pasando*/
+	}
 }
