@@ -11,21 +11,17 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	unsigned int x; /*Contador para recorrer las lista*/
 
-	if (head)
+	if (head != NULL)
 	{
-		if (index > 0)
-		{
 		for (x = 0; x < index; x++)
 		{
 			head = head->next;
 		}
 		if (head == NULL)
+		{
 			return (NULL);
-
-	return (head);
+		}
+		return (head);
 	}
-		else
-			return (head);
-	}
-return (NULL);
+	return (NULL);
 }
