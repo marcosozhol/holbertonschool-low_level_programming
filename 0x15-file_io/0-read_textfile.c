@@ -17,6 +17,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	char *buf;
 	ssize_t rd; /*donde se almacenara la informacion para abrir*/
 
+	if (filename == NULL)
+	{
+		return (-1);
+	}
+
 	fd = open(filename, O_RDONLY, 0600);
 
 	if (fd == -1) /*si no se puede abrir el archivo*/
