@@ -28,27 +28,22 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		if (buf == NULL) /*en caso de no tener contenido*/
 			return (0);
 
-	if (filename == NULL) /*si el nombre es NULL*/
-	{
-		return (0);
-	}
-
 	rd = read(fd, buf, letters);
 	if (rd == -1)
 	{
 		return (0);
 	}
 
+	buf[letters] = '\0';
+
 	wr = write(1, buf, rd);
-	{
 		if (wr == -1)
 		{
 			return (0);
 		}
-		return (wr);
-	}
+
 
 	close(fd);
 	free(buf);
-return (0);
+return (wr);
 }
