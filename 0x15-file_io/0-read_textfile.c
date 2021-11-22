@@ -3,10 +3,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *
- *
- *
- *
+ *read_textfile - Lee un archivo de texto y muestra en pantalla el cont
+ *@filename: nombre del archivo
+ *@letters: contenido
+ *Return: contenido | 0 en caso de fallas
  *
  */
 ssize_t read_textfile(const char *filename, size_t letters)
