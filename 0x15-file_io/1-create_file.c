@@ -11,7 +11,7 @@
 */
 int create_file(const char *filename, char *text_content)
 {
-	int new_file, i = 0;
+	int new_file, i = 0; /*con i recorremos los elementos del contenido*/
 
 	if (filename == NULL)
 	{
@@ -32,7 +32,7 @@ int create_file(const char *filename, char *text_content)
 	if (text_content == NULL)
 	{
 		/*close(new_file);*/
-		return (-1);
+		return (1);
 	}
 
 	else
