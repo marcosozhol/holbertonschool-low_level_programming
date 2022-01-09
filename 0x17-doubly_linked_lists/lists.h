@@ -1,6 +1,7 @@
 #ifndef doubly_linked_list
 #define doubly_linked_list
 #include <string.h>
+#include <stdlib.h>
 
 /**
  * struct dlistint_s - doubly linked list
@@ -22,5 +23,6 @@ size_t print_dlistint(const dlistint_t *h);
 size_t dlistint_len(const dlistint_t *h);
 dlistint_t *add_dnodeint(dlistint_t **head, const int n);
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
+void free_dlistint(dlistint_t *head);
 
 #endif
